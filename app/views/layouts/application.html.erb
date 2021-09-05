@@ -10,6 +10,35 @@
   </head>
 
   <body>
+    <header class="clearfix">
+      <div class="header-logo">Action Mailer</div>
+        <div class="header-list">
+          <ul>
+            <li><%= link_to 'index', contacts_path %></li>
+            <li><%= link_to 'new contact', new_contact_path %></li>
+            <li><a href="https://diver.diveintocode.jp/curriculums/477">textbook</a></li>
+          </ul>
+        </div>
+    </header>
+
+    <div class="main">
+      <div class="copy-container">
+        <h1>Action Mailer Practice<span> and Send Grid</span></h1>
+        <h2>You can do it!</h2>
+      </div>
+    </div>
+<div class="contents-area">
     <%= yield %>
+</div>
+    <footer>
+    <div class="footer-logo">Action Mailer</div>
+    <div class="footer-list">
+      <ul>
+        <li><%= link_to 'index', contacts_path %></li>
+        <li><%= link_to 'new contact', new_contact_path %></li>
+        <li><a href="https://diver.diveintocode.jp/curriculums/477">textbook</a></li>
+      </ul>
+    </div>
+    </footer>
   </body>
 </html>
